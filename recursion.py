@@ -100,6 +100,16 @@ print(sum_digits(n))
     when it n==0 it will returns 0 and stop the recursion
     know 3+2+1=6 is the count of the number"""  
 
+print("Example for recursion for sum of arrays")
+def sum_array(arr):
+    if len(arr) == 0:  # Base case
+        return 0
+    return arr[0] + sum_array(arr[1:]) 
+
+sum=sum_array([1,2,3,4,5,6])
+print(sum) 
+
+
      
     
         

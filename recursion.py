@@ -63,7 +63,52 @@ def revers_string(s):
 input_string=input("Enter the string to reverse:") 
 reverse_result=revers_string(input_string)
 print(f"The original string ={input_string}")   
-print(f"The reversed result={reverse_result}")       
+print(f"The reversed result={reverse_result}")    
+
+print("Example for recursive code for count digits") 
+n=int(input())       
+def count_number(n):
+    if n==0:
+        return 0
+    return 1+count_number(n//10)
+print(count_number(n))
+"""if n = 1234
+    n!=0 so proceed to the recursive case
+    so n value will return 1 and + count_number(123)
+    n!=0 so proceed to the recursive case
+    so n value will return 1 and + count_number(12)
+    n!=0 so proceed to the recursive case
+    so n value will return 1 and + count_number(1)
+    n!=0 so proceed to the recursive case
+    so n value will return 1 and + count_number(0)
+    know n == 0 so n value returns 0
+    and add numbers of recursive case happens and result answer as 4"""
+    
+    
+print("Example for recursion sum of digits")    
+n=int(input())
+def sum_digits(n):
+    if n==0:
+        return 0
+    return n%10 +sum_digits(n//10)
+
+print(sum_digits(n))  
+"""if n=123
+    sum_digits(123)---n=123---n%10=3---n//10=12
+    sum_digits(12)---n=12---n%10=2---n//10=1
+    sum_digits(1)---n=1---n%10=1---n//10=0
+    when it n==0 it will returns 0 and stop the recursion
+    know 3+2+1=6 is the count of the number"""  
+
+     
+    
+        
+            
+        
+    
+        
+            
+    
     
      
     

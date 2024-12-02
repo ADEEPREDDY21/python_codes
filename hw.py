@@ -12,7 +12,7 @@ a,b,c=map(int,input("enter a , b , c values:").split())
 second_high=second_max(a,b,c)
 print(second_high)
 
-#print("To print gcd of 2 number")
+print("To print gcd of 2 number")
 def gcd(num1,num2):
     while num2!=0:
         num1,num2=num2,num1%num2
@@ -21,6 +21,13 @@ num1=int(input("Enter number 1"))
 num2=int(input("Enter number 2"))
 GCD=gcd(num1,num2)
 print(GCD)
+print("ANOTHER way to print gcd of two numbers")
+import math
+num1=int(input("Enter number 1:")
+num2=int(input("Enter number 2:")
+print(math.gcd(num1,num2))         
+         
+         
 
          
          

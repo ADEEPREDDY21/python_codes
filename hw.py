@@ -25,7 +25,43 @@ print("ANOTHER way to print gcd of two numbers")
 import math
 num1=int(input("Enter number 1:")
 num2=int(input("Enter number 2:")
-print(math.gcd(num1,num2))         
+print(math.gcd(num1,num2))
+
+print("Set Username and Password")
+def set_details():
+    print("Set your sign in details")
+    user_name=input("Enter USER NAME:")
+    while True:
+        password=input("Enter Your password:")
+        confirm_password=input("Re-enter your password:")
+        if password==confirm_password:
+            print("User Name and Password is set Successfully")
+            return user_name,password
+        else:
+            print("Password and Confirm password is mismatch")    
+
+def verify_pass(stored_user,stored_pass):
+    user_name=input("Enter username:")            
+    password=input("Enter Your password:")
+    if user_name==stored_user and password==stored_pass:
+        print("Login Successfully..!")
+    else:
+        print("Invalid Username or Password")    
+
+def main():
+    stored_user,stored_pass=set_details()
+    verify_pass(stored_user,stored_pass)
+if __name__=="__main__":
+    main()         
+         
+         
+         
+
+
+         
+
+
+         
          
          
 

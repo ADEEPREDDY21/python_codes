@@ -53,7 +53,17 @@ def main():
     verify_pass(stored_user,stored_pass)
 if __name__=="__main__":
     main()         
-         
+
+print("Sum of total numbers given")
+n=int(input("Enter the number to give output as sum of each number:"))
+print(sum(int(digit) for digit in str(n)))
+print("Another way to print the sum of each number ")
+n=int(input("Enter the number to give output as sum of each number:"))
+sumof=0
+while n>0:
+    sumof +=n%10
+    n//=10
+print(sumof)   
          
          
 

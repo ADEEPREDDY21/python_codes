@@ -64,6 +64,24 @@ while n>0:
     sumof +=n%10
     n//=10
 print(sumof)   
+"""
+if yoy bought car insurance. The policy of the insurance is:
+
+The maximum rebatable amount for any damage is Rs 
+X
+X lakhs.
+If the amount required for repairing the damage is ≤X lakhs, that amount is rebated in full.
+Chef's car meets an accident and required Rs 
+Y
+Y lakhs for repairing.
+
+Determine the amount that will be rebated by the insurance company."""
+
+
+for r in range(int(input())):
+    x,y=map(int,input().split())
+    print(min(x,y))
+
          
          
 

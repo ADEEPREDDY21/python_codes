@@ -117,7 +117,29 @@ for r in range(t):
     x,y,z=map(int,input().split())
     print(gym_trainer(x,y,z))    
                     
-         
+ print("write a python code to print factorial values by using both for anf while loops")
+def factorial_for(n):
+    if n<0:
+        return "factorial is not defined for negative values"
+    result=1
+    for i in range(1,n+1):
+        result*=i
+    return result
+num=int(input("Enter a non negative number to calculate its factorial:"))
+print(f"Factorial of {num} using for loop is {factorial_for(num)}")                        
+
+def factorial_while(n):
+    if n<0:
+        return "Factorial is not defined for negative values"
+    result=1
+    count=1
+    while count<=n:
+        result*=count
+        count+=1
+    return result
+        
+num=int(input("Enter a non negative number to print its factoeial:"))
+print(f"factorial of {num} by using while loop is {factorial_while(num)}") 
          
 
 

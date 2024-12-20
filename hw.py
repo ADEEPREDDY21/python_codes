@@ -177,6 +177,48 @@ print("d:",d)
 print("e:",e)
          
 
+"""Develop a python script that creates a dictionary to store and retrieve 
+contact details(name and phone number)and demonstrate adding,updating and 
+deleteing Entries"""
+contact_book = {}
+
+def add_contact(name, phone):
+    if name in contact_book:
+        print(f"Contact {name} already exists.")
+    else:
+        contact_book[name] = phone
+        print(f"Contact {name} added successfully.")
+
+def update_contact(name, phone):
+    if name in contact_book:
+        contact_book[name] = phone
+        print(f"Contact {name} updated successfully.")
+    else:
+        print(f"Contact {name} is not found.")
+
+def delete_contact(name):
+    if name in contact_book:
+        del contact_book[name]
+        print(f"Contact {name} is deleted successfully.")
+    else:
+        print(f"Contact {name} is not found.")
+
+def display_contacts():
+    if contact_book:
+        print("\nCurrent Contacts:")
+        for name, phone in contact_book.items():
+            print(f"Contact Name: {name} --- Contact Number: {phone}")
+    else:
+        print("No contacts found.")
+
+# Main program execution
+if __name__ == "__main__":
+    add_contact("ADEEP", 9441182329)
+    add_contact("TARUN", 7997557932)
+    update_contact("TARUN", 9876543210)
+    display_contacts()
+    delete_contact("ADEEP")
+    display_contacts()
 
          
 

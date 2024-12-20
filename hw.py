@@ -139,7 +139,42 @@ def factorial_while(n):
     return result
         
 num=int(input("Enter a non negative number to print its factoeial:"))
-print(f"factorial of {num} by using while loop is {factorial_while(num)}") 
+print(f"factorial of {num} by using while loop is {factorial_while(num)}")
+
+"""Create a python program that performss various on lists (such as adding,removing,sorting and revesing) 
+and tuples(Accessing elements,slicing and unpacking)"""  
+my_list=[10,20,30,40,50]
+print("Original list:",my_list)
+# Adding elements to the list
+my_list.append(60)
+print("After adding 60 to the list:",my_list)
+# Removing elements from the list
+my_list.remove(30)
+print("after removing 30 from the list:",my_list)
+# Sorting the list in ascending order
+my_list.sort()
+print("After sorting the list",my_list)
+# Reversing the list
+my_list.reverse()
+print("After reversing the list:",my_list)
+#Slicing the list
+slice_list=my_list[1:4]#which print the list values from the index 
+print("After slicing the list:",slice_list)
+
+my_tuple=(100,200,350,400,550)
+print("Original tuple:",my_tuple)
+# Accessing elements in the tuple
+print("First element in the tuple:",my_tuple[0])
+# Slicing the tuple
+slice_tuple=my_tuple[1:4]
+print("After slicing the tuple from the index 1 to 3:",slice_tuple)
+a,b,c,d,e=my_tuple
+print("Unpacking the tuple:",a,b,c,d,e)
+print("a:",a)
+print("b:",b)
+print("c:",c)
+print("d:",d)
+print("e:",e)
          
 
 

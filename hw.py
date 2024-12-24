@@ -220,6 +220,22 @@ if __name__ == "__main__":
     delete_contact("ADEEP")
     display_contacts()
 
+
+"""Write a program that uses a while loop to find no. of vowels in given input string of lowercase latin letters.
+
+Note: Vowels in lowercase latin letters are: a, e, i, o and u."""
+input_1=input("Enter sring :")
+vowels="aeiou"
+vowel_c=0
+index=0
+while len(input_1)>index:
+    if input_1[index] in vowels:
+        vowel_c+=1
+    index+=1
+print(f"Number of vowels in given string is {vowel_c}") 
+
+    
+
          
 
 

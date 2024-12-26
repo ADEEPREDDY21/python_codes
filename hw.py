@@ -244,7 +244,25 @@ numOfFrnds=n#here n is the number of friends willing to take subscription
 costOfSub=x#Cost of subscription to cheftv
 mincost=((n+5//6)*x)
 print(mincost)
+"""CRED Coins
+For each bill you pay using CRED, you earn X CRED coins.
+At CodeChef store, each bag is worth 
+100 CRED coins.
 
+Chef pays Y number of bills using CRED. Find the maximum number of bags he can get from the CodeChef store.
+
+Input Format
+First line will contain T, number of test cases. Then the test cases follow.
+Each test case contains of a single line of input, two integers X and Y.
+Output Format
+For each test case, output in a single line - the maximum number of bags Chef can get from the CodeChef store."""
+result=[]
+for r in range(int(input())):
+    x,y=map(int,input().split())
+    total=x*y//100
+    result.append(total)
+for _ in result:
+    print(_)
 
     
 

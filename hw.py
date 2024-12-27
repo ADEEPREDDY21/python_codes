@@ -264,6 +264,25 @@ for r in range(int(input())):
 for _ in result:
     print(_)
 
+"""Minimum Pizzas
+Each pizza consists of 4 slices. There are 
+N friends and each friend needs exactly X slices.
+
+Find the minimum number of pizzas they should order to satisfy their appetite.
+
+Input Format
+The first line of input will contain a single integer 
+T, denoting the number of test cases.
+Each test case consists of two integers N and X, the number of friends and the number of slices each friend wants respectively.
+Output Format
+For each test case, output the minimum number of pizzas required."""
+t=int(input())
+for r in range(t):
+    n,x=map(int,input().split())
+    total=n*x
+    pizza=(total+3)//4
+    print(pizza)
+
     
 
          

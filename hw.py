@@ -297,11 +297,27 @@ The first line of input will contain an integer T — the number of test cases. 
 The first and only line of each test case contains an integer N, as described in the problem statement.
 Output Format
 For each test case, output on a new line the juicer's profit when he sells N glasses of juice."""
-for r in range(int(input()):
+for r in range(int(input())):
     n=int(input())
     total_expenditure=50*0.30
     profit=total_expenditure*n
     print(int(profit))
+
+"""Count the Notebooks
+You know that 1 kg of pulp can be used to make 1000 pages and 1 notebook consists of 100 pages.
+
+Suppose a notebook factory receives N kg of pulp, how many notebooks can be made from that?
+
+Input Format
+First line will contain T, the number of test cases. Then the test cases follow.
+Each test case contains a single integer N - the weight of the pulp the factory has (in kgs).
+Output Format
+For each test case, output the number of notebooks that can be made using N kgs of pulp."""
+for r in range(int(input())):
+    n=int(input())
+    note_book=(n*1000)/100
+    print(int(note_book))
+    
     
 
          
